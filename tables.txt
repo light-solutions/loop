@@ -1,0 +1,95 @@
+LP_STORE - the store details
+	STR_ID
+	STR_NAME
+	STR_LOC_ID  - location id to link to location master
+	STR_LOC_CODE
+	
+LP_STR_STOCK  - store stock details linking to item master
+	STK_ID
+	STK_TYPE
+	ITM_ID
+	STK_NAME
+	STK_QTY
+	STK_RODR_QTY
+	STR_ITM_UNT_PRC
+
+LP_STR_CONTACT - for sending msg or email to shop
+	STR_ID
+	CNT_ID
+	CNT_TYP
+	CNT_VAL
+	
+LP_ITEM - item what all which we show it in our web site... common master 
+	ITM_ID
+	ITM_CODE
+	ITM_BAR_CODE
+	ITM_NAME
+	ITM_BASE_PRICE
+	ITM_BRAND
+	BAR_CODE
+	ITM_MSURE
+	ITM_MSURE_UNT
+	
+
+LP_LOC - location master to store location data
+
+	LOC_ID
+	LOC_CODE
+	LOC_CO_X
+	LOC_CO_Y
+	LOC_AREA
+	LOC_STREET
+	LOC_CITY
+	LOC_COUNTRY
+	LOC_POBOX
+	
+LP_CUSTOMER
+	CUS_ID
+	CUS_CODE
+	USR_ID
+	PASSWORD
+	PREFD_STORE_ID
+	
+	
+LP_CUS_LOC
+	CUS_ID
+	LOC_ID
+	LOC_SHROT_NAME
+	
+LP_CUS_BILLS
+	CUS_ID
+	BIL_ID
+	BILL_DATE
+	BILL_CODE
+	TTL_BILL_AMT
+	DICNT_AMT
+	FNL_BILL_AMT
+
+LP_CUS_BILL_DTLS
+	BIL_ID
+	ITM_ID
+	ITM_CODE
+	ITM_VAL
+	ITM_CNT
+	ITM_PRICE
+	TTL_PRICE
+
+create table LP_CART
+(
+  CARD_ID      NUMBER(18),
+  USER_ID      VARCHAR2(30),
+  CRE_DATT     TIMESTAMP(7),
+  CART_SES_KEY VARCHAR2(50)
+)
+
+-- Create table
+create table LP_CART_ITM
+(
+  CART_ITM_ID    NUMBER(18),
+  CARD_ID        NUMBER(18),
+  ITM_ID         NUMBER(18),
+  ITM_CODE       VARCHAR2(100),
+  ITM_UNIT_PRICE NUMBER(20,2),
+  ITM_UNIT_CRNCY VARCHAR2(10),
+  ITM_QTY        NUMBER(4)
+)

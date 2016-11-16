@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+     <groupId>com.light.loop</groupId>
+    <artifactId>loop-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+    <name>Loop Root Project Xml</name>
+     <properties>
+     	<LoopVersion>1.0.0</LoopVersion>
+     	<SpringVersion>3.2.0.RELEASE</SpringVersion>
+     </properties>
+    <modules>
+        <!-- module>loop-users</module>
+        <module>loop-location</module>
+        <module>loop-item</module>
+        <module>loop-customer</module>
+        <module>loop-store</module -->
+        <!-- module>loop-all</module -->
+        <module>loop-users</module>
+        <module>loop-common</module>
+        <module>loop-cart</module>
+        <module>loop-test</module>
+        
+    </modules>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.7</source>
+                        <target>1.7</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
