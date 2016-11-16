@@ -20,11 +20,14 @@
         <module>loop-customer</module>
         <module>loop-store</module -->
         <!-- module>loop-all</module -->
-        <module>loop-users</module>
         <module>loop-common</module>
+        <module>loop-users</module>
+        <module>loop-location</module>
+        <module>loop-item</module>
+        <module>loop-customer</module>
+        <module>loop-store</module>
         <module>loop-cart</module>
-        <module>loop-test</module>
-        
+        <!-- module>loop-all</module -->
     </modules>
     <build>
         <pluginManagement>

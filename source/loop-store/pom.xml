@@ -8,13 +8,14 @@
     <version>1.0.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-    <groupId>com.light.loop.cart</groupId>
-    <artifactId>lp-cart-parent</artifactId>
+
+    <groupId>com.light.loop.store</groupId>
+    <artifactId>lp-store-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
-    <name>Cart Management Project</name>
+    <name>Store Management Project</name>
     <modules>
-        <module>lp-crt-services</module>
-        <module>lp-crt-domain</module>
+        <module>lp-str-services</module>
+        <module>lp-str-domain</module>
     </modules>
 </project>

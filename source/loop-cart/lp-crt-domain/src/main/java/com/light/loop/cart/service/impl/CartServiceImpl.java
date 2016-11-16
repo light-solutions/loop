@@ -10,9 +10,10 @@ import com.light.loop.cart.transferobjects.CartItemSO;
 import com.light.loop.cart.transferobjects.CartResultSO;
 import com.light.loop.cart.transferobjects.CartSO;
 import com.light.loop.cart.transferobjects.CartSearchSO;
-import com.light.loop.common.ServiceException;
+import com.light.loop.common.exceptions.ServiceException;
 import com.light.loop.common.transferobjects.ResponseSO;
-import com.light.loop.usermgmnt.transferobjects.UserSO;
+import com.light.loop.common.transferobjects.UserSO;
+
 
 /**
  * @author 58394

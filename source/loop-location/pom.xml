@@ -8,13 +8,15 @@
     <version>1.0.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-    <groupId>com.light.loop.cart</groupId>
-    <artifactId>lp-cart-parent</artifactId>
+
+    <groupId>com.light.loop.location</groupId>
+    <artifactId>lp-loc-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
-    <name>Cart Management Project</name>
+    <name>User Management Project</name>
     <modules>
-        <module>lp-crt-services</module>
-        <module>lp-crt-domain</module>
+        <module>lp-loc-services</module>
+        <module>lp-loc-domain</module>
+        <!-- module>ys-webapp</module-->
     </modules>
 </project>

@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-<parent>
-     <groupId>com.light.loop.cart</groupId>
-    <artifactId>lp-cart-parent</artifactId>
+  <parent>
+    <groupId>com.light.loop.usermgmnt</groupId>
+    <artifactId>lp-usermgmnt-parent</artifactId>
     <version>1.0.0</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.light.loop.cart</groupId>
-  <artifactId>lp-crt-domain</artifactId>
+  <groupId>com.light.loop.usermgmnt</groupId>
+  <artifactId>ls-usermgmnt-domain</artifactId>
   <version>1.0.0</version>
-  <name>lp-crt-domain</name>
+  <name>ls-usermgmnt-domain</name>
   <build>
     <resources>
       <resource>
@@ -20,17 +20,7 @@
     </resources>
   </build>
   <dependencies>
-    	<dependency>
-  		<groupId>com.light.loop</groupId>
-  		<artifactId>loop-common</artifactId>
-  		<version>${LoopVersion}</version>
-  	</dependency>
   	<dependency>
-  		<groupId>com.light.loop.cart</groupId>
-  		<artifactId>lp-crt-services</artifactId>
-  		<version>${LoopVersion}</version>
-  	</dependency>
-  	  	<dependency>
   		<groupId>com.light.loop.usermgmnt</groupId>
   		<artifactId>lp-usermgmnt-services</artifactId>
   		<version>${LoopVersion}</version>
